@@ -1,2 +1,2 @@
 # tradegarage
-website code. 
+github pages. 
