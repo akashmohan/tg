@@ -1,0 +1,142 @@
+body {
+	display: flex;
+	min-height: 100vh;
+	box-sizing: border-box;
+	margin: 0;
+}
+.message {
+	font-family: 'Poppins', sans-serif;
+	width: 30%;
+	margin: auto;
+	text-align: center;
+}
+
+.we-are-coming-soon {
+	font-size: 29px;
+	margin: 0; 
+}
+
+.description {
+	font-weight: 200;
+	line-height: 25px;
+}
+
+.author {
+	font-size: 15px;
+	margin: 0;
+}
+
+.we-are-coming-soon, .description, .author, .trade-garage-branding {
+	animation: fadeAndEnter 2s;
+}
+
+.trade-garage-branding {
+	color: #ccc;
+	margin-top: 3px;
+    font-size: 25px;
+}
+
+svg#Elements {
+	margin-top: 50px;
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #eleven, #twelve {
+	animation-name: growAndShrink;
+	animation-iteration-count: infinite;
+}
+
+#one {
+	animation-duration: 1s;
+}
+
+#two {
+	animation-duration: 1.3s;	
+}
+
+#three {
+	animation-duration: 3.4s;
+}
+
+#four {
+	animation-duration: 2s;
+}
+
+#five {
+	animation-duration: 1.6s;
+}
+
+#six {
+	animation-duration: 2.8s;
+}
+
+#seven {
+	animation-duration: 1.4s;
+}
+
+#eight {
+	animation-duration: 3s;
+}
+
+#nine {
+	animation-duration: .6s;
+}
+
+#ten {
+	animation-duration: 1.3s;
+}
+
+#eleven {
+	animation-duration: 2.2s;
+}
+
+#twelve {
+	animation-duration: 1.5s;
+}
+
+@keyframes fadeAndEnter {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 100;
+	}
+}
+
+@keyframes growAndShrink {
+
+	0% {
+		transform: translateY(200px);
+	}
+
+	50% {
+		transform: translateY(0px);
+	}
+
+	100% {
+		transform: translateY(200px);	
+	}
+
+}
+
+@media only screen and ( max-width: 1024px ) {
+	.message {
+		width: 40%;
+	}
+}
+
+@media only screen and ( max-width: 768px ) {
+	body {
+		padding: 20px;
+	}
+	.message {
+		width: 50%;
+	}
+}
+
+@media only screen and ( max-width: 480px ) {
+	.message {
+		width: 425px;
+		padding: 10px;
+	}
+}
